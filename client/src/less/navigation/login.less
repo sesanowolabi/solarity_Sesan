@@ -1,0 +1,103 @@
+.login-form-container {
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    position: fixed;
+    transition: max-height 0.3s ease-in-out;
+    border-radius: 4px;
+    height: auto;
+    top: 76px;
+    width: 100%;
+    right: 0;
+    z-index: 999;
+    .mq-screen-sm-min({
+      width: 290px;
+      right: 48px;
+      top: 96px;    
+      -webkit-box-shadow: 0 5px 50px 0 rgba(0,0,0,.1);
+      box-shadow: 0 5px 50px 0 rgba(0,0,0,.1);
+    });
+    .mq-screen-md-min({
+      z-index: 2;
+    });
+
+    .mq-screen-lg-min({
+        right: 176px;
+    });
+
+    .mq-screen-xl-min({
+        right: 146px;
+    });
+
+    
+    
+
+    .orpheus-login {
+
+    }
+
+    // .orpheus-login {
+    //   .block;
+    //   &:after {
+    //     content: '';  
+    //     position: absolute;
+    //     left: 42%;
+    //     top: 100%;
+    //     width: 0;
+    //     height: 0;
+    //     border-left: 20px solid transparent;
+    //     border-right: 20px solid transparent;
+    //     border-top: 20px solid #e8e8e8;
+    //     clear: both;
+
+    //   }  
+    // }
+    
+
+    .login-utility {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        width: 50%;
+        text-align: center;
+        a {
+          text-align: center;  
+          color: @brandSecondary;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    
+}
+
+.login-form-container.is-visible {
+    max-height: 100vh;
+    height: 100vh;
+    .mq-screen-sm-min({
+      max-height: 30em;
+      height: auto;
+    });
+}
+
+.bump-header-down{
+  .login-form-container.is-visible{
+    top: 165px;
+  }
+}
+
+.button.login.is-hidden {
+  display: block;
+}
+
+.button.login.is-visible {
+  color: @brandPrimary;
+  background-color: #fff;
+}

@@ -1,0 +1,205 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &--icon {
+    width: 3*@u;
+    height: 3*@u;
+    border: 2px solid @grey3;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    margin-right: @u;
+    transition: border 0.2s;
+
+    &:hover{
+      border: 2px solid @brandSecondary;
+    }
+  }
+
+  &--input {
+    opacity: 0;
+    max-width: 6px;
+    position: absolute;
+
+    &:checked + .checkbox--icon {
+      background-color: @brandSecondary;
+      border: 2px solid @brandSecondary;
+
+      &:after {
+        content: '';
+        width: 6px;
+        height: 10px;
+        box-shadow: 2px 2px white;
+        transform: rotate(45deg);
+        position: absolute;
+        left: 7px;
+        top: 1px;
+      }
+    }
+    &:focus + .checkbox--icon {
+      border-color: @brandSecondaryAlt;
+      box-shadow: 0 0 8px 0 @brandSecondaryAlt;
+    }
+    &:active + .checkbox--icon {
+      border-color: @brandSecondaryAlt;
+      box-shadow: 0 0 8px 0 @brandSecondaryAlt;
+    }
+    &:hover + .checkbox--icon {
+      border-color: @brandSecondaryAlt;
+    }
+  }
+}
+
+
+
+
+
+.customcheckbox {
+    &--icon {
+      background-color: rgba(255, 255, 255, 0.25);
+      border: 2px solid @brandSecondary;
+      border-radius: 50em;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      border: 0;
+      margin-top: -2px;
+      margin-right: 0;
+
+      &:after {
+        content: '';
+        width: 8px;
+        height: 14px;
+        box-shadow: 2px 2px white;
+        transform: rotate(45deg);
+        position: absolute;
+        left: 11px;
+        top: 4px;
+      }
+    }
+    &:focus + &--icon {
+      border-color: @brandSecondaryAlt;
+
+      box-shadow: 0 0 8px 0 @brandSecondaryAlt;
+    }
+    &:active + &--icon {
+      border-color: @brandSecondaryAlt;
+      box-shadow: 0 0 8px 0 @brandSecondaryAlt;
+    }
+
+  li {
+    padding: 0;
+
+    input[type="radio"]{
+      display: none;
+    }
+
+    label {
+      background-color: #fff;
+      padding: 1.4rem 2rem;
+      border: 2px solid #fff;
+      transition: color 0s, background 0.1s, border 0.1s;
+      .fontRegular;
+
+      span {
+        float: right;
+      }
+
+      &:hover {
+        background-color: @brandSecondaryAlt;
+        color: #fff;
+        border: @brandSecondaryAlt solid 2px;
+        cursor: pointer;
+
+      }
+    }
+
+    label.is-selected {
+      border: 2px solid @brandSecondary;
+      background-color: @brandSecondary;
+      color: #fff;
+
+      &:hover {
+          background-color: @brandSecondary;
+        }
+    }
+  }
+
+  li:first-of-type {
+    label{
+      border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+  }
+
+  li:last-of-type{
+    label{
+      border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+  }
+}
+
+
+.choicescheckbox {
+  &--label {
+    background-color: #fff;
+    border: 2px solid @grey3;
+    border-radius: 4px;
+    transition: all 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(0,0,0,.15);
+    }
+  }
+
+  &--title{
+    .fontMedium;
+    color: @grey5;
+  }
+
+  &--description{
+    color: @grey4;
+  }
+
+  &--icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    margin-top: -2px;
+    margin-right: 0;
+    right: 4px;
+    top: 4px;
+    opacity: 0;
+
+    &:after {
+      content: '';
+      width: 8px;
+      height: 14px;
+      box-shadow: 2px 2px @brandSecondary;
+      transform: rotate(45deg);
+      position: absolute;
+      left: 11px;
+      top: 4px;
+    }
+  }
+
+  &--input {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+
+    &:checked + .choicescheckbox--label {
+      border: 2px solid @brandSecondary;
+
+      .choicescheckbox--icon {
+        opacity: 1;
+      }
+    }
+  }
+}

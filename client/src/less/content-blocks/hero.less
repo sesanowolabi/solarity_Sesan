@@ -1,0 +1,158 @@
+.hero {
+    // background-image: url(../assets/img/hero.png);
+    background-position: center;
+    background-size: cover;
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    .mq-screen-sm-min({
+      display: flex;
+    });
+
+    &--grid {
+      max-width: 1040px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      display: block;
+    }
+
+    &--callout {
+      max-width: 518px;
+      position: relative;
+      padding: 74px 16px;
+      display: block;
+      z-index: 1;
+
+      h1, p {
+        color: @grey5;
+      }
+
+      h1 {
+        line-height: 1.2;
+      }
+    }
+
+    .hero--image {
+      background-position: bottom center;
+      background-size: cover;
+      height: 500px;
+      .mq-screen-md-min({
+        height: 564px;
+        background-position: bottom center;
+      });
+      .mq-screen-lg-min({
+        max-width: 1600px;
+        margin: 0 auto;
+      });
+    }
+}
+
+.hero.blog {
+  max-width: 1012px;
+  margin: 0 auto ;
+  display: block;
+
+  .hero--callout {
+    max-width: 768px;
+    padding-left: 20px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 72px 20px 28px;
+
+    p {
+      text-align: center;
+      position: relative;
+      margin: 5px auto 0;
+    }
+  }
+
+  .hero--sub-callout {
+      text-align: center;
+      padding-bottom: 38px;
+  }
+
+  .hero--heading_icon {
+    position: relative;
+    margin: 0 auto 10px;
+    max-width: 80px;
+    border-radius: 40px;
+  }
+
+  .hero--image_blog {
+    width: 100%;
+    max-width: 1000px;
+    background-position: bottom right;
+    background-size: cover;
+    height: 300px;
+
+    .mq-screen-md-min({
+      height: 442px;
+      background-position: center center;
+    });
+  }
+}
+
+
+
+.hero.illustration {
+    background-position: center;
+    background-size: cover;
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    .hero--grid {
+      max-width: 1040px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      display: block;
+    }
+
+    .hero--callout {
+      max-width: 518px;
+
+      position: relative;
+      padding: 72px 16px;
+
+      .mq-screen-md-min({
+        padding: 172px 16px;
+      });
+
+      .mq-screen-lg-min({
+        padding: 172px 0;
+      });
+
+      display: block;
+      z-index: 1;
+
+
+
+      h1, p {
+        color: #fff;
+      }
+
+      h1 {
+        line-height: 1.1;
+      }
+    }
+
+    img {
+      .mq-screen-md-min({
+        bottom: 0;
+        position: absolute;
+        right: 0;
+      });
+
+      width: auto;
+    }
+}
+
+.textHero {
+    p {
+      max-width: 548px;
+    }
+}

@@ -1,0 +1,33 @@
+.checklist {
+  list-style: none;   
+  padding-left: 0;
+  padding-bottom: 20px;     
+       
+  .checklist--item {
+    .pb-2;
+    padding-left: 6px;
+    .fontSize0;
+  }
+
+  .checklist--item_icon{
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: relative;
+    display: inline-block;
+    float: left;
+
+    &:before {
+      .feather;
+      content: "\e83f";
+      color: @brandSecondary;
+      font-size: 22px;
+      padding-right: 12px;
+    }
+  }
+
+  .checklist--item_content {
+    width: calc(~"100% - 40px");
+    float: right;
+  }
+}  

@@ -1,0 +1,214 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-accordion border="none" padding="1px" />
+      <mj-accordion-element icon-wrapped-url="http://i.imgur.com/Xvw0vjq.png" icon-unwrapped-url="http://i.imgur.com/KKHenWa.png" icon-height="24px" icon-width="24px" />
+      <mj-accordion-title font-family="Roboto, Open Sans, Helvetica, Arial, sans-serif" background-color="#fff" color="#031017" padding="15px" font-size="18px" />
+      <mj-accordion-text font-family="Open Sans, Helvetica, Arial, sans-serif" color="#505050" font-size="14px" />
+      <mj-style inline="inline">
+        .border-btm {
+          border: 1px solid #F2F2F2;
+        }
+      </mj-style>
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+
+    <mj-section>
+      <mj-column>
+        <mj-image align="center" padding="10px 0" src="img/header-logo.png" />
+        <mj-text
+          padding="10px 0px 0px 0px"
+          color="#05607D"
+          font-family="Helvetica"
+          align="center"
+          font-size="15px"
+          font-weight="900">
+          Analytics Report: Week of 8/19 - 8/26
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px" background-color="#F2F2F2">
+      <mj-column>
+        <!-- Each different segment lives in it's own mj-accordion element -->
+        <mj-accordion>
+          <mj-accordion-element>
+            <mj-accordion-title color="#05607D" font-size="15px"> Landing Page View </mj-accordion-title>
+            <mj-accordion-text>
+
+              <!-- Four Column 'high view' section -->
+              <table style="width:100%; background-color: #fff; margin: 10px 0;">
+                <tr>
+                  <th style="text-align: center; color: #05607D; padding: 10px 0 20px; font-size: 10px; border-right: 1px solid #F2F2F2;"><span style="font-size: 22px">362</span><br>Total Page Views</th>
+                  <th style="text-align: center; color: #05607D; padding: 10px 0 20px; font-size: 10px; border-right: 1px solid #F2F2F2;"><span style="font-size: 22px">362</span><br>Total Page Views</th>
+                  <th style="text-align: center; color: #05607D; padding: 10px 0 20px; font-size: 10px; border-right: 1px solid #F2F2F2;"><span style="font-size: 22px">362</span><br>Total Page Views</th>
+                  <th style="text-align: center; color: #05607D; padding: 10px 0 20px; font-size: 10px; "><span style="font-size: 22px">362</span><br>Total Page Views</th>
+                </tr>
+              </table>
+
+                <!-- Two Column 'accordion content' section -->
+                <table style="width:100%; background-color: #F2F2F2;">
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px; color:#05607D; font-weight:900;">Data Title</th>
+                    <th style="padding: 10px 0 20px 10px; color:#05607D; font-weight:900;">Data Value</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Link to job description</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Schedule appointment link from staff directory</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Schedule Appointment Success</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Call To Action </th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Online Banking Login</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Footer Link</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Primary Nav Link</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Start Chat (footer)</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Click to Call (footer)</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Card Links (home page uses these)</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Share Blog Link (social icons after each post)</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">404</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">MQLF Submit</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">MQLF Completes</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Make A Payment</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+
+                </table>
+              </mj-accordion-text>
+            </mj-accordion-element>
+          </mj-accordion>
+
+        <!-- Each different segment lives in it's own mj-accordion element -->
+        <mj-accordion>
+          <mj-accordion-element>
+            <mj-accordion-title color="#05607D" font-size="15px"> A Second Page View </mj-accordion-title>
+            <mj-accordion-text>
+
+              <!-- Four Column 'high view' section -->
+              <table style="width:100%; background-color: #fff; margin: 10px 0;">
+                <tr>
+                  <th style="text-align: center; color: #05607D; padding: 10px 0 20px; font-size: 10px; border-right: 1px solid #F2F2F2;"><span style="font-size: 22px">362</span><br>Total Page Views</th>
+                  <th style="text-align: center; color: #05607D; padding: 10px 0 20px; font-size: 10px; border-right: 1px solid #F2F2F2;"><span style="font-size: 22px">362</span><br>Total Page Views</th>
+                  <th style="text-align: center; color: #05607D; padding: 10px 0 20px; font-size: 10px; border-right: 1px solid #F2F2F2;"><span style="font-size: 22px">362</span><br>Total Page Views</th>
+                  <th style="text-align: center; color: #05607D; padding: 10px 0 20px; font-size: 10px; "><span style="font-size: 22px">362</span><br>Total Page Views</th>
+                </tr>
+              </table>
+
+                <!-- Two Column 'accordion content' section -->
+                <table style="width:100%; background-color: #F2F2F2;">
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px; color:#05607D; font-weight:900;">Data Title</th>
+                    <th style="padding: 10px 0 20px 10px; color:#05607D; font-weight:900;">Data Value</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Link to job description</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Schedule appointment link from staff directory</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Schedule Appointment Success</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Call To Action </th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Online Banking Login</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Footer Link</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Primary Nav Link</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Start Chat (footer)</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Click to Call (footer)</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Card Links (home page uses these)</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Share Blog Link (social icons after each post)</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">404</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">MQLF Submit</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">MQLF Completes</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+                  <tr style="text-align:left; padding:0 20px">
+                    <th style="padding: 10px 0 20px 10px">Make A Payment</th>
+                    <th style="padding: 10px 0 20px 10px">1234</th>
+                  </tr>
+
+                </table>
+              </mj-accordion-text>
+            </mj-accordion-element>
+          </mj-accordion>
+
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

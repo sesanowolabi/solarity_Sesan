@@ -1,0 +1,75 @@
+.numberedListWithChecklist{
+  .block;
+  /*.mq-screen-lg-min({
+    .flex;
+  });*/
+}
+
+.numberedlist-container, .checklist-container {
+    max-width: 524px;
+
+    h3 {
+      margin: 0;
+      .mb-2;
+    }
+}
+
+.checklist-container {
+  /*margin-right: ~"calc(50vw - 440px)";*/
+  padding-left: 4rem;
+  position: relative;
+  .block;
+
+    .checklist {
+      max-width: 86%;
+    }
+}
+   
+.numberedlist-container {
+  
+
+  .inner_2;
+
+  .mq-screen-lg-min({
+    padding: 0;
+    margin-left: ~"calc(50vw - 484px)";
+    padding-right: 4rem;
+  });
+
+  .mq-screen-xl-min({
+    margin-left: ~"calc(50vw - 524px)";
+  });
+  
+    .list-item {
+      .step-counter {
+        background-color: @brandSecondary;
+        border-radius: 50em;
+        color: #fff;
+        display: inline-block;
+        font-size: 18px;
+        float: left;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+      }
+
+      &-details{
+        width: ~"calc(100% - 40px)";
+        display: inline-block;
+        float: right;
+
+          h4 {
+            margin-top: 0;
+          }
+      }
+    }
+}
+
+.row {
+  display: flex; 
+}
+
+.col {
+  flex: 1;
+}

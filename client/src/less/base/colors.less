@@ -1,0 +1,138 @@
+ // brand colors
+
+@brandPrimary: #ef812e;
+@brandPrimaryAlt: #c5582e;
+@brandSecondary: #05607D;
+@brandSecondaryAlt: #077496;
+
+.brandPrimary{background-color: @brandPrimary;}
+.brandPrimaryAlt{background-color: @brandPrimaryAlt;}
+.brandSecondary{background-color: @brandSecondary;}
+.brandSecondaryAlt{background-color: @brandSecondaryAlt;}
+
+
+.colorBrandPrimary{color: @brandPrimary;}
+.colorBrandPrimaryAlt{color: @brandPrimaryAlt;}
+.colorBrandSecondary{color: @brandSecondary;}
+.colorBrandSecondaryAlt{color: @brandSecondaryAlt;}
+
+//alert
+@alert: red;
+@alertAlt: #c70202;
+.red-error{color: @alert;}
+
+// greyscale
+@grey1: #F6F6F6;
+@grey2: #e8e8e8;
+@grey3: #c7ccce;
+@grey4: #595959;
+@grey5: #333;
+
+.grey5{background-color: @grey5;}
+.grey4{background-color: @grey4;}
+.grey3{background-color: @grey3;}
+.grey2{background-color: @grey2;}
+.grey1{background-color: @grey1;}
+
+.colorGrey5{color: @grey5;}
+.colorGrey4{color: @grey4;}
+.colorGrey3{color: @grey3;}
+.colorGrey2{color: @grey2;}
+.colorGrey1{color: @grey1;}
+
+.white{color:#fff !important;}
+.black{color:#000;}
+
+.bg-white {background-color: #fff;}
+// type
+
+@altText: 'ClanPro-Bold', sans-serif;
+@altTextRegular: 'ClanPro-News', sans-serif;
+@altTextMedium: 'ClanOT-Medium', sans-serif;
+
+.fontBold{font-family: 'ClanPro-Bold', sans-serif;}
+.fontMedium{font-family: 'ClanOT-Medium', sans-serif;}
+.fontRegular{font-family: 'ClanPro-News', sans-serif;}
+
+
+.fontSize5{
+	font-size: 64px;
+	line-height: 72px;
+}
+.fontSize4{
+	font-size: 42px;
+	line-height: 48px;
+	.mq-screen-md-min({
+		font-size: 48px;
+		line-height: 52px;
+	});
+}
+.fontSize3{
+	font-size: 28px;
+	line-height: 20px;
+	.mq-screen-md-min({
+		font-size: 32px;
+		line-height: 28px;
+	});
+}
+.fontSize2{
+	font-size: 16px;
+	line-height: 24px;
+	.mq-screen-md-min({
+		font-size: 18px;
+		line-height: 28px;
+	});
+}
+.fontSize1{
+	font-size: 14px;
+	line-height: 24px;
+	.mq-screen-md-min({
+		font-size: 16px;
+		line-height: 28px;
+	});
+}
+.fontSize0{
+	font-size: 12px;
+	line-height: 20px;
+	.mq-screen-md-min({
+		font-size: 14px;
+		line-height: 22px;
+	});
+}
+
+@unit: 8px;
+
+// body {
+//   font-size: 1.75*$unit;
+//   line-height: 3*$unit;
+//   .fontRegular;
+// }
+
+// .fontSize4 {
+//     font-size:8*$unit;
+//     line-height: 9*$unit;
+// }
+
+// .fontSize3 {
+//     font-size: 6*$unit;
+//     line-height: 7*$unit;
+// }
+
+// .fontSize2 {
+//     font-size: 4*$unit;
+//     line-height: 5*$unit;
+// }
+
+// .fontSize1 {
+//     font-size: 2.25*$unit;
+//     line-height: 3*$unit;
+// }
+
+// .fontSize0 {
+//     font-size: 1.75*$unit;
+//     line-height: 3*$unit;
+// }
+
+.disclaimers {
+	color: #767676;
+}

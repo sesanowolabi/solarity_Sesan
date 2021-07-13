@@ -1,0 +1,40 @@
+.faq-category-inner{
+	padding: 100px 2% 0px 2%;
+	display: flex;
+	.faq-category-column1{
+		width: 20%;
+		padding-top: 100px;
+
+		.mq-screen-sm-max({
+			display: none;
+		});
+
+		.faq-category-nav{
+			list-style: none;
+			padding-inline-start: 0px;
+			.faq-category-item{
+
+			}
+		}
+	}
+	.faq-category-column2{
+		width: 55%;
+		padding: 0 40px;
+		flex-grow:1;
+		.faq-category-title{
+			text-align: center;
+		}
+		.category-description{
+			display: block;
+
+			&.collapsed{
+				display: none;
+			}
+		}
+	}
+	.faq-category-column3{
+		width: 20%;
+		padding-top: 100px;
+	}
+
+}

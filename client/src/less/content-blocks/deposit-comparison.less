@@ -1,0 +1,125 @@
+.hide-mobile{
+  display: none;
+}
+.hide-desktop{
+  display: block;
+}
+
+@media (max-width: 1024px){
+  .hide-mobile{
+    display: block !important;
+  }
+  .hide-desktop{
+    display: none !important;
+  }
+}
+.accordion--content {
+  margin-top: 4px;
+}
+.deposit-comparison {
+  background-color: @brandPrimary;
+  color: #fff;
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    li {
+      margin: 0 18px;
+    }
+
+    .slider-headline {
+      color: #fff;
+      list-style-type: none;
+      position: relative;
+      cursor: pointer;
+
+      &:before {
+        transform: translateX(-50%) rotate(45deg);
+        background: @brandPrimary;
+        bottom: -25px;
+        content: '';
+        height: 1.125rem;
+        left: 50%;
+        opacity: 0;
+        position: absolute;
+        width: 1.125rem;
+        z-index: 2;
+      }
+
+      &.active-nav {
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.comparison-content {
+  width: 100%;
+
+  .viewRates {
+    line-height: 18px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .gp-20 {
+    padding: 20px;
+  }
+  .button {
+    float: right;
+    padding: 10px;
+    margin-top: 0px !important;
+    background-color: @grey2;
+    color: @brandPrimary;
+    text-align: center;
+
+    &:hover {
+      background-color: @brandPrimary;
+      border: 2px solid @brandPrimary;
+      color: #fff;
+    }
+  }
+  .block {
+    width: 33.33% !important;
+  }
+  td {
+    border-right: none !important;
+    vertical-align: top;
+    overflow-wrap: break-word;
+  }
+}
+
+.at-a-glance {
+  list-style-type: none;
+  position: relative;
+
+  .checklist {
+    color: #077496;
+    font-family: 'icomoon';
+    font-size: 1rem;
+    line-height: 1.95;
+    position: absolute;
+    top: inherit;
+
+    &:before {
+      content: "\e83f";
+    }
+  }
+}
+
+@media (max-width: 1024px){
+  .comparison-content {
+    width: 100%;
+    min-height: 400px;
+
+    .block {
+      width: 100% !important;
+    }
+  }
+}

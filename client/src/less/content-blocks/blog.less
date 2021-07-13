@@ -1,0 +1,314 @@
+
+
+
+
+.blog-item {
+    -webkit-animation: mymove 5s;
+    -webkit-animation-delay: 2s;
+    animation: mymove 5s;
+    animation-delay: 2s;
+
+    opacity: 0;
+    transition: 0.6s all;
+    top: 16px;
+    display: none;
+}
+
+.blog-item.is-visible {
+    opacity: 1;
+    top: 0;
+    display: block;
+    animation: mymove 5s;
+}
+
+@-webkit-keyframes mymove {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes mymove {
+  from {opacity: 0;}
+  to {opacity: 1;}
+
+}
+
+
+.blog-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: stretch
+}
+
+.list-post {
+    position: relative;
+    width: 100%;
+    align-self: stretch;
+    animation: a .5s infinite;
+    animation-iteration-count: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #efece5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.list-post .cover-image,
+.list-post .thumb-link {
+    display: block;
+    width: 100%;
+
+}
+
+.list-post .cover-image {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover
+}
+
+.list-post .card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    padding: 16px;
+
+     .card-copy {
+        color: @grey4;
+     }
+
+     .time-to-read {
+       .clearfix;
+       svg {
+         float: left;
+         margin-top: 3px;
+       }
+       span {
+         font-weight: 400;
+       }
+     }
+}
+
+.list-post .h-link {
+    margin: 0px 0
+}
+
+.blog-container .list-post .h-link {
+    margin: 24px 0
+}
+
+.list-post h2 {
+    font-weight: 700;
+    color: #2b2b2b
+}
+
+@media only screen and (min-width:768px) {
+    .blog-container .list-post:nth-child(odd) {
+        padding-left: 24px;
+        box-shadow: -1px 0 0 0 #dfdfdf;
+        flex: 0 0 50%
+    }
+    .blog-container .list-post:nth-child(2n) {
+        padding-right: 24px;
+        flex: 0 0 50%
+    }
+}
+
+@media only screen and (min-width:1024px) {
+
+    .blog-container .list-post {
+        flex: 0 0 33.333%;
+        box-shadow: none
+    }
+    .blog-container .list-post:nth-child(3n+1) {
+        flex: 0 0 33.333%;
+        padding: 0 24px 0 0;
+        box-shadow: none
+    }
+    .blog-container .list-post:nth-child(3n+2) {
+        flex: 0 0 33.333%;
+        padding: 0 24px;
+        box-shadow: -1px 0 0 0 #dfdfdf
+    }
+    .blog-container .list-post:nth-child(3n+3) {
+        flex: 0 0 33.333%;
+        padding: 0 0 0 24px;
+        box-shadow: -1px 0 0 0 #dfdfdf
+    }
+    .blog-container .list-post .meta {
+        margin-bottom: 0;
+
+        a {
+            &:hover {
+                color: @brandSecondary;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+
+.blog-category-filter {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    .mq-screen-sm-max({
+      max-width: 400px !important;
+    });
+
+    .filter-toggle {
+        padding: 0;
+        margin: 0;
+        vertical-align: baseline;
+        border: 0;
+        .fontSize3;
+        color: #000;
+        display: flex;
+        margin-bottom: 32px;
+        color: @grey4;
+
+        .active-category {
+            color: @grey5;
+            border-bottom: 2px solid #000;
+            display: block;
+            position: relative;
+            transition: 0.3s all;
+
+            &:hover {
+                color: @brandSecondary;
+                border-bottom: 2px solid @brandSecondary;
+            }
+
+            .fontMedium;
+            .icon-chevron-down, .icon-chevron-up {
+                position: absolute;
+                top: 7px;
+                right: -24px;
+                font-size: 20px;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+
+        }
+    }
+    .categories {
+        transition: 0.4s all;
+        position: relative;
+        display: block;
+        overflow: hidden;
+
+            a {
+                color: @grey5;
+                transition: 0.3s all;
+                padding-bottom: 4px;
+
+                &:hover {
+                    color: @brandSecondary;
+                }
+            }
+    }
+    .categories.visible {
+        max-height: 400px;
+
+    }
+    .categories.hidden {
+        max-height: 0;
+    }
+}
+
+
+
+.share-links {
+    border: none;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        margin: @unit;
+        text-indent: inherit;
+        span {
+            -webkit-transition: all .25s ease-in-out;
+            -moz-transition: all .25s ease-in-out;
+            -o-transition: all .25s ease-in-out;
+            transition: all .25s ease-in-out;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
+            border-radius: 50%;
+            color: #fff;
+            display: block;
+            font-size: 16px;
+            position: relative;
+            padding: 16px;
+            line-height: 1;
+
+            &:hover {
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                -o-transform: scale(1.2);
+                transform: scale(1.2);
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+        }
+        span.facebook {
+            background-color: #426399;
+        }
+        span.twitter {
+            background-color: #28abe2;
+        }
+        span.linkedin {
+            background-color: #1980b4;
+        }
+        span.email {
+            background-color: #d76126;
+        }
+    }
+}
+
+
+
+.blog-item {
+   -webkit-animation: fadeIn 5s;
+   -webkit-animation-delay: 2s;
+   animation: fadeIn 5s;
+   animation-delay: 2s;
+
+   opacity: 0;
+   transition: 0.6s all;
+   top: 16px;
+   // display: none;
+}
+
+.blog-item.is-hidden-opacity{
+    opacity: 0;
+}
+
+.blog-item.is-visible-opacity {
+   opacity: 1;
+   top: 0;
+   display: block;
+   animation: fadeIn 5s;
+}
+
+@-webkit-keyframes fadeIn {
+ from {opacity: 0;}
+ to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+ from {opacity: 0;}
+ to {opacity: 1;}
+}

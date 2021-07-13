@@ -1,0 +1,214 @@
+.card-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 768px;
+    margin: 0 auto;
+    padding-top: 12px;
+
+    .card {
+      background-color: #fff;
+      width: 100%;
+
+      svg {
+        width: 40px;
+
+        .mq-screen-sm-min({
+
+        });
+      }
+
+      a {
+          display: flex;
+          align-items: center;
+          padding: 0px;
+
+          .mq-screen-sm-min({
+            display: inline-block;
+            padding: 0 8px;
+          });
+
+      }
+
+      a.phone-number {
+        padding: 0;
+      }
+
+      a.button-primary {
+        padding: 12px 32px;
+      }
+
+      .mq-screen-sm-min({
+        width: calc(50% - 20px);
+      });
+      .mq-screen-md-min({
+        width: calc(25% - 20px);
+      });
+
+      // padding: 1.875rem;
+      margin: 0 10px;
+      border: 1px solid @grey2;
+      border-radius: 6px;
+      margin-bottom: 1.03125rem;
+      display: block;
+
+      h2, h3 {
+        color: @brandSecondary;
+        padding-left: 48px;
+        .fontRegular;
+        width: 75%;
+        text-align: left;
+        .mq-screen-sm-min({
+          width: 100%;
+          text-align: center;
+          padding-left: 0;
+        });
+      }
+      .icon-wrapper {
+        position: absolute;
+      }
+      .mq-screen-sm-min({
+        .icon-wrapper {
+          min-height: 80px;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          position: inherit;
+        }
+      });
+      img {
+        width: 45px;
+        display: inline-block;
+        float: left;
+        padding: 0 0 0 8px;
+
+        .mq-screen-sm-min({
+          .mt-2;
+          width: 100%;
+          float: none;
+          max-width: 70px;
+        });
+      }
+
+        &:hover {
+          background-color: @brandPrimary;
+          cursor: pointer;
+
+          h2, h3 {
+            color: #fff;
+          }
+        }
+
+    }
+}
+
+
+.card-grid.jobs {
+  max-width: 1048px;
+
+  .card {
+      .mq-screen-sm-min({
+        width: calc(50% - 20px);
+      });
+      .mq-screen-md-min({
+        width: calc(33.33% - 20px);
+      });
+
+      &:hover {
+          background-color: @brandPrimary;
+          cursor: pointer;
+
+          h2, h3, p {
+            color: #fff;
+          }
+        }
+  }
+}
+
+
+
+.card-grid.contact {
+  width: 100%;
+  max-width: 100%;
+
+  .card {
+      width: 100%;
+      .mq-screen-md-min({
+        width: calc(50% - 20px);
+      });
+      .mq-screen-lg-min({
+        width: calc(33.33% - 20px);
+      });
+
+      h2, h3 {
+        color: @grey4;
+        font-size: 14px;
+        text-align: left;
+
+        &:hover {
+          color: @grey4;
+        }
+      }
+
+      .link {
+        color: @brandSecondary;
+        text-decoration: underline;
+        transition: 0s all;
+        border-bottom: none;
+
+        &:hover {
+          border-bottom: none;
+          color: @brandPrimary;
+        }
+      }
+
+      &:hover {
+          background-color: #fff;
+          cursor: inherit;
+
+          h2, h3, p {
+            color: inherit;
+          }
+        }
+  }
+}
+
+
+.card-grid.disclosures {
+  max-width: 1048px;
+
+  .card {
+      color: @brandSecondary;
+
+      .mq-screen-sm-min({
+        width: calc(50% - 20px);
+      });
+      .mq-screen-md-min({
+        width: calc(33.33% - 20px);
+      });
+
+
+      &:hover {
+          color: #fff;
+          background-color: @brandPrimary;
+          cursor: pointer;
+        }
+  }
+}
+
+
+.card-grid.cards-5, .card-grid.cards-6 {
+  width: 854px;
+  max-width: 96%;
+  .card {
+    width: 100%;
+    .mq-screen-sm-min({
+      width: calc(50% - 20px);
+    });
+    .mq-screen-md-min({
+      width: calc(33.33% - 20px);
+    });
+  }
+}

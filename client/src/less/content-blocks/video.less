@@ -1,0 +1,89 @@
+.watch-vimeo-block, .watch-youtube-block {
+    background-color: #000;
+    position: relative;
+    display: block;
+    -webkit-transition: height .2s;
+    transition: height .2s;
+    max-width: 1080px;
+    margin: 0 auto;
+
+    &:hover {
+      cursor: pointer;
+    }
+  
+    .watch-vid-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background-size: cover;
+
+        .player-content {
+            position: absolute;
+            z-index: 1;
+            color: #fff;
+            text-align: center;
+            width: 100%;  
+            top: 50%;  
+            left: 0;
+            -webkit-transform: translateX(0) translateY(-50%);
+            -ms-transform: translateX(0) translateY(-50%);
+            transform: translateX(0) translateY(-50%);
+
+            .play-button {
+                top: ~"calc(50% - 30px)";  
+                position: absolute;
+                left: ~"calc(50% - 30px)"; 
+                
+                &:before {
+                  content: '';
+                  display: block;
+                  width: 0;
+                  height: 0;
+                  border-top: 26px solid transparent;
+                  border-bottom: 26px solid transparent;
+                  border-left: 46px solid white;
+                  z-index: 1;
+                }
+
+                &:after {
+                  box-shadow: 0 7px 54px 0 rgba(20,20,20,.3);
+                  content: '';
+                  background-color: @brandPrimary;
+                  display: block;
+                  height: 100px;
+                  width: 100px;
+                  position: absolute;
+                  top: -24px;
+                  left: -32px;
+                  border-radius: 50em;
+                  z-index: -1;
+                }
+            }
+        }
+    }
+}
+
+
+
+.embed-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  height: 0; 
+  overflow: 
+  hidden; 
+  max-width: 100%; 
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+}
+
+
+
+
+

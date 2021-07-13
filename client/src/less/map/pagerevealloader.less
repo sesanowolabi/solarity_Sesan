@@ -1,0 +1,114 @@
+
+.page-reveal-loader {
+  .horiz-reveal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    background-color: @brandPrimary;
+    top: 0;
+    left: 0;
+    transition: all 5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+    animation: horizReveal .8s 0s forwards;
+    animation-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+    animation-delay: 2s;
+
+    // ADD TRIGGER CLASS ON LOAD
+    // &.trigger {
+    //   animation: horizReveal .8s 0s forwards;
+    //   animation-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+    //   animation-delay: 0s;
+    // }
+  }
+
+  .vert-reveal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: @brandSecondary;
+    top: 0;
+    left: 0;
+    transition: all 5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+    animation: vertReveal .5s 0s forwards;
+    animation-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+    animation-delay: 2.8s;
+
+    // &.trigger {
+    //   animation: vertReveal .5s 0s forwards;
+    //   animation-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+    //   animation-delay: .8s;
+    // }
+  }
+}
+
+.fadeInAndUp {
+  // ADD THIS CLASS TO ANY ELEMENT TO FADE IN AND ANIM UP AFTER LOADING REVEAL
+  opacity: 0;
+  transition: all 2s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+
+  // ADD TRIGGER CLASS ON LOAD
+  &.trigger {
+    animation: fadeInAndUp .8s 0s forwards;
+    animation-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+    animation-delay: 1s;
+  }
+}
+
+.fadeIn {
+  // ADD THIS CLASS TO ANY ELEMENT TO FADE IN AFTER LOADING REVEAL
+  opacity: 0;
+  transition: opacity 2s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+
+  // ADD TRIGGER CLASS ON LOAD
+  &.trigger {
+    animation: fadeIn .8s 0s forwards;
+    animation-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+    animation-delay: 1s;
+  }
+}
+
+// COLORED OVERLAY LOADING REVEAL -------
+
+  @keyframes horizReveal {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  @keyframes vertReveal {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+// --------------------------------------
+
+
+
+// POST-LOADING REVEAL ITEM FADE IN -----
+
+  @keyframes fadeInAndUp {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+// --------------------------------------

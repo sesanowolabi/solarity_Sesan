@@ -1,0 +1,769 @@
+header.landing-nav {
+	padding: 0;
+	margin: 0;
+	z-index: 4;
+	p {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+
+.landing-page {
+
+	.lp-v2 {
+		.lp-rate {
+			font-size: 22px;
+			color: #05607D;
+		}
+		
+		.hero-v2 {
+			min-height: 400px;
+			background-size: cover;
+			background-position: center center;
+			position: relative;
+
+			p {
+				color: #000;
+			}
+			&::after {
+				background-color: @grey1;
+				opacity: .85;
+				width: 100%;
+				height: 100%;
+			}
+			.lp-v2-bg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #fff;
+				opacity: .55;
+				z-index: 0;
+			}
+			.grid {
+				position: relative;
+				z-index: 1;
+			}
+			.block;
+			overflow: hidden;
+		}
+		.logo-v2 {
+		  max-width: 200px;
+		  position: relative;
+		  margin: 40px auto 10px;
+		  .mq-screen-md-min({
+		    width: 200px;
+		  });
+		}
+		form {
+			min-height: 358px;
+
+			.mq-screen-md-min({
+				margin-top: 20px;
+				float: right;
+				width: 400px;
+			});
+
+			.form-confirm {
+				border: 1px solid #ccc;
+				min-height: 310px;
+				padding-top: 100px;
+				border-radius: 4px;
+			}
+		}
+		.headshot-v2 {
+			width: 130px;
+			height: 130px;
+			background-size: cover;
+			margin: 40px auto;
+			box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.5);
+		}
+		.lp-card {
+			height: 170px;
+			position: relative;
+			vertical-align: top;
+			.mq-screen-xs-max({
+		    height: 135px;
+				padding-top: 8px;
+		  });
+
+			p {
+				line-height: 18px;
+				position: relative;
+				z-index: 2;
+			}
+
+			.lp-card-bg {
+				position: absolute;
+				border-radius: 8px;
+				// left: 2%;
+				// width: 96%;
+				height: 100%;
+				background-color: @grey2;
+				z-index: 0;
+			}
+		}
+		.lp-card-icon {
+			position: relative;
+			margin: 10px auto;
+			z-index: 1;
+			height: 70px;
+			width: 70px;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.lp-testimonials-bg {
+				background-size: 50%;
+		}
+		.lp-button {
+			position: relative;
+			margin: 40px auto;
+		}
+		.land-phone {
+			.mq-screen-md-max({
+		    float: none;
+		  });
+		}
+	}
+	&-hero {
+		background-size: cover;
+		background-position: center center;
+		.block;
+		overflow: hidden;
+
+
+		.richText ul{
+			padding-bottom: 0px !important;
+    		margin-bottom: 0px !important;
+    		margin-top: 0px !important;
+		}
+		.richText ul li:before {
+		    content: "";
+		    position: absolute;
+		    height: 5px !important;
+		    width: 5px !important;
+		    border-radius: 100% !important;
+		    left: -18px !important;
+		    top: 10px !important;
+		    background-color: #fff !important;
+		}
+
+		.z-helper{
+			z-index: 1;
+			position: relative;
+		}
+
+		.landing-top-offset{
+			padding-top: 60px;
+		}
+
+		h1 {
+			color: #fff;
+			padding: 48px 0;
+			&.realtor-override, &.rates-override{
+				padding: 0px 0px 0px 0px;
+			}
+			.mq-screen-md-min({
+				padding: 120px 0;
+				&.realtor-override{
+					padding: 0px 0px 0px 0px;
+				}
+			});
+			margin: 0;
+			.fontSize5;
+			z-index: 1;
+    		position: relative;
+
+			&:after {
+				content: '';
+			}
+		}
+
+
+		&:after {
+		    content: '';
+		    background-color: rgba(0,0,0,.3);
+		    position: absolute;
+		    width: 100%;
+		    height: 100%;
+		    top: 0;
+		    left: 0;
+		    z-index: 0;
+		}
+	}
+
+	p {
+		.pb-2;
+	}
+	form {
+		.mq-screen-md-min({
+			margin-top: -120px;
+			float: right;
+			// width: 400px;
+		});
+		
+
+		border-radius: 4px;
+		z-index: 3;
+		position: relative;
+		display: block;
+
+
+		// max-width: 96%;
+
+	}
+	.lp-winter20 {
+		h1 {
+			font-size: 46px;
+			line-height: 52px;
+		}
+		h2 {
+			font-size: 32px;
+			line-height: 40px;
+			font-weight: bold;
+			margin-top: 0px;
+		}
+		h3 {
+			font-size: 24px;
+			line-height: 30px;
+			font-weight: 400;
+		}
+		h4 {
+			font-size: 18px;
+			line-height: 22px;
+		}
+		p, li {
+			font-size: 16px;
+			line-height: 24px;
+		}
+		a.phoneLink {
+			color: #2b2b2b;
+			 &:hover {color: #2b2b2b;}
+		}
+		.text-blue {color: #006BA1;}
+
+		.icon-circleBackground {
+			border-radius: 50%;
+		}
+
+		.background-orange {
+			background: #ef812e;
+			color: #fff !important;
+
+			.icon-circleBackground {
+				background: #D66529;
+			}
+		}
+
+		.background-blue {
+			background: #006BA1;
+			color: #fff !important;
+
+			.icon-circleBackground {
+				background-color: #fff;
+			}
+		}
+
+		.background-grey {
+			background: #F6F6F6;
+
+			.icon-circleBackground {
+				background-color: #fff;
+			}
+		}
+
+		.background-blueDot{
+			background-image: url('https://s3-us-west-2.amazonaws.com/solarity-website-20180924123425848200000001/img/blue_dot_bg.svg');
+			background-size: cover;
+			background-repeat: repeat;
+			background-position: center;
+
+			.icon-circleBackground {
+				background-color: #fff;
+			}
+		}
+		
+		.button-dark {
+			background: #2B2B2B;
+			color: #fff;
+			border: 0px solid transparent;
+		}
+
+		.button-orange {
+			background: #ef812e;
+			color: #fff;
+			border: 0px solid transparent;
+		}
+
+		.icon-flex {
+			display:flex;
+			justify-content: space-between;
+
+			.icon-container {
+				text-align: center;
+				padding: 0 6px;
+
+				img {
+					margin: 0 auto;
+					height: 70px;
+					width: auto;
+					padding-bottom: 20px;
+				}
+
+				.icon-circleBackground {
+					margin: 0 auto;
+					height: 100px;
+					width: 100px;
+					padding: 5px;
+					margin-bottom: 20px;
+
+					img {
+						margin-top: 12.5%;
+						height: 75%;
+						padding-bottom: 0;
+					}
+				}
+				
+				p {
+					padding-bottom: 0;
+					margin: 0;
+				}
+			}
+		}
+		.header-row {
+			.lp-header-content {
+				padding: 0 5%;
+			}
+
+			.contact-row {
+				text-align: left;
+				.button-orange {
+					margin-right: 16px;
+				}
+			}
+		}
+
+		.call-row {
+			text-align: center;
+			h2 {
+				padding: 32px;
+				margin-bottom: 0;
+			}
+			* {
+				color: white;
+			}
+		}
+
+		// .lp-header-parent {
+		// 	display: flex;
+		// 	flex-direction: column;
+		// 	align-items: center;
+		// 	justify-content: center;
+		// 	vertical-align: middle;
+
+		// 	.lp-header-content {
+		// 		max-width: 640px;
+		// 		width: 100%;
+		// 	}
+		// }
+		.reasons-row {
+			padding: 40px 0;
+
+			.grid{
+				justify-content: space-evenly;
+			}
+
+			@media screen and (min-width: 580px) and (max-width: 650px) {
+				.icon-container {
+					min-width: 240px;
+				}
+			}
+
+			@media screen and (max-width: 599px) {
+				.icon-flex {
+					flex: 1 0 49%;
+					.icon-container {
+						min-width: 200px;
+						display: flex;
+						
+						flex-grow: 1;
+						flex-basis: 0;
+						flex-direction: column;
+						* {
+							display: flex!important;
+							align-self: center;
+						}
+					}
+					align-items: stretch;
+					justify-content: space-evenly;
+				}
+			}
+			.icon-flex {
+				.icon-container {
+					// width: 240px;
+					display: flex;
+					flex-grow: 1;
+					flex-basis: 0;
+					flex-direction: column;
+					// * {
+					// 	display: flex;
+					// 	align-self: center;
+					// }
+				}
+				align-items: stretch;
+				justify-content: space-between;
+			}
+
+			h2 {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+		}
+		.benefits-row {
+			padding: 40px 0;
+			text-align:center;
+
+			h2{ 
+				margin-bottom: 16px;
+			}
+			h4 {
+				margin-top: 0;
+				margin-bottom: 40px;
+			}
+		}
+		.rate-box-row {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			padding: 60px 0;
+
+			.rateBox {
+				padding: 20px 30px;
+				border-radius: 8px;
+				box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.5);
+
+				text-align: center;
+
+				p {
+					margin: 0;
+				}
+
+				.rbrRate {
+					font-size: 28px;
+					line-height: 40px;
+					font-weight: bold;
+					text-align: center;
+					margin: 12px 0;
+				}
+			}
+
+			&.rbralt {
+
+				h2 {
+					text-align:center;
+					font-size: 28px;
+				}
+
+				h3 {
+					font-size: 28px;
+				}
+
+				.row-text {
+					text-align: center;
+				}
+				
+				.rateBox {
+					display: flex;
+					flex-direction: row;
+				}
+
+				.rbrButtonDivider {
+					display: none;
+				}
+
+				.button-orange {
+					margin-right: 16px;
+				}
+
+				@media screen and (max-width: 767px) {
+					.rateBox {
+						flex-direction: column;
+					}
+
+					.rbrButtonDivider {
+						display: inline;
+					}
+	
+					.button-orange {
+						margin-right: 0;
+					}
+
+					* { // This could also be `rateBox.*` but I did this on accident and liked it better
+						width: 100% !important; // !important is a bandaid fix, there is a 50% width somewhere else that I didn't want to deal with
+					}
+				}
+			
+				.rateDisclaim {
+					font-size: 14px;
+				}
+
+				.rbraltcolumn {
+					display: flex;
+					flex-direction: column;
+					flex-grow: 1;
+					width: 50%;
+					.rbrRate {
+						margin: 0;
+					}
+				}
+
+				.rbraltcenter {
+					justify-content: center;
+				}
+
+				.rbraltrow {
+					// flex-grow: 1;
+					// justify-content: center;
+					margin: auto;
+					* {
+						margin: 0;
+					}
+				
+					h3 {
+						margin-top: 16px;
+						// font-weight: 600;
+					}
+				}
+
+				.rbraltcall {
+					padding-top: 16px;
+					text-align: center;
+				} 
+
+				.rbralthr {
+					width: 100%;
+				}
+
+				.rbrallcallspacer {
+					// margin-top: 8px;
+				}
+			}
+		}
+
+		.testimonials-row {
+			padding: 80px 0;
+
+			.testimonialGrid {
+				display: flex;
+			
+	
+				.grid1of3 {
+					display: flex;
+					align-items: stretch;
+				}
+
+				.testimonial-container {
+					border-radius: 8px;
+					background-color: #fff;
+					padding: 20px;
+					text-align: center;
+					align-items: stretch;
+
+					display: flex;
+					flex-direction: column;
+					// justify-content: center;
+
+					p {
+						margin: 0;
+					}
+					img {
+						border-radius: 50%;
+						width: 50px;
+						height: auto;
+						margin: 0 auto;
+					}
+					.testimonial-image {
+						padding-bottom: 20px;
+					}
+					.testimonial-text {
+						font-weight: bold;
+						// justify-content: center;
+					}
+					.testimonial-author {
+						font-size: 14px;
+						font-weight: 300;
+						line-height: 18px;
+						// justify-content: center;
+					}
+				}
+			}
+		}
+		.form-row {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			padding: 60px 0;
+		
+			.form-container{
+				border-radius: 8px;
+				box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.5);
+				padding: 20px 32px;
+
+				p {margin: 0;}
+			}
+
+			.formBox {
+				display: flex;
+				align-content: center;
+
+				.form-container {
+					display: flex;
+					align-content: center;
+					flex-direction: column;
+					width: 100%;
+				}
+			}
+
+			form {
+				.mq-screen-md-min({
+					margin-top: 0;
+					float: none;
+					margin: 0;
+					// width: auto;
+				});
+
+				&.grey1 {
+					background-color: transparent;
+				}
+				&.inner_3 {padding: 0;}
+			}
+		}
+		.cta-row {
+			text-align: center;
+			padding: 20px 0;
+
+			p {
+				font-size: 24px;
+				line-height: 32px;
+				margin: 0;
+				padding: 0;
+			}
+			.button{
+				font-size: 18px;
+				border: 1px solid #fff;
+				background: transparent;
+				color: #fff;
+			}
+		}
+		.disclosures-row p{
+			font-size: 14px;
+			margin: 0;
+		}
+
+		@media screen and (max-width: 767px) {
+			.rate-box-row {
+				padding: 40px 0;
+			}
+			.grid1of2 {
+				margin-right: 0;
+				width: 100%;
+				float: none;
+
+				&.formBox .form-container {
+					width: 100%;
+				}
+			}
+			.icon-flex{ 
+				flex-wrap: wrap;
+				.icon-container {
+					width: 50%;
+				}
+			}
+			.icon-container:not(:last-of-type) {
+				margin-bottom: 16px;
+			}
+			.testimonials-row .testimonialGrid {
+				display: block;
+				.grid1of3 {
+					width: 100%;
+					margin-right: 0;
+					margin-bottom: 20px;
+					float: none;
+				}
+			}
+			.rbraltrow {padding-top:16px; padding-bottom: 16px;}
+		}
+		@media screen and (max-width: 599px) {
+			.reasons-row {
+				.icon-flex {
+					display: flex !important;
+				}
+			}
+			.icon-flex {
+				display: block;
+				flex-wrap: no-wrap;
+
+				.icon-container {
+					width: auto;
+				}
+			}
+		}
+
+		// An attempt at fixing the header
+		.w20-header {
+			flex-direction: row;
+			align-items: flex-start;
+			box-shadow: 0px 0px 8px #555;
+			padding: 20px;
+		}
+		// Header logo
+		.logo-v2 {
+			max-width: 150px;
+			position: relative;
+			.mq-screen-md-min({
+				width: 150px;
+			});
+		}
+		.w20-headerText {
+			margin: 0;
+			display: none;
+		}
+
+		.lightweight {
+			font-size: 14px;
+			// font-family: 'ClanPro-Light';
+		}
+
+		.rbrButton {
+			margin-bottom: 16px;
+		}
+
+		@media screen and (max-width: 480px) {
+			.rbrTextStack {
+				display: flex;
+				flex-direction: column;
+				
+				* {
+					text-align: center;
+				}
+			}
+	
+			.rbrHide {
+				display: none;
+			}
+		}
+		
+	}
+	.land-phone{
+		border-radius: 4px;
+	   z-index: 3;
+	   position: relative;
+	   display: block;
+	   float: right;
+	   width: 400px;
+	   max-width: 96%;
+	}
+}

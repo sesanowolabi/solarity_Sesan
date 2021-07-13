@@ -1,0 +1,71 @@
+.slider {
+	.box-container {
+	    background-color: #fff;
+	    border-radius: 4px;
+
+	    .caption {
+	    	padding-bottom: 1rem;
+	    	color: @grey3;
+	    }
+
+	    .dollar-sign{
+	    	font-size: 1.4em;
+		    padding-right: 0.1em;
+		    float: left;
+		    display: inline-block;
+		    padding-top: 0.6rem;
+		    color: @grey3;
+	    }
+
+	    input, .dollar-value {
+	    	background-color: transparent;
+		    border: none;
+		    border-bottom: 2px solid @grey3;
+		    padding-left: 0;
+		    border-radius: 0;
+		    width: 88px;
+		    padding: 0;
+		    font-size: 20px;
+		    margin: 0;
+		    line-height: 0;
+		    min-height: 40px;
+		    float: right;
+	    }
+
+	    input {
+	    	position: absolute;
+		    z-index: 2;
+		    opacity: 0;
+		    left: 19px;
+		    transition: none;
+	    }
+
+	    .dollar-value {
+	    	position: relative;
+		    display: inline-block;
+		    line-height: 1.9;
+		    opacity: 1;
+		    transition: none;
+	    }
+
+	    .instructions {
+		    text-align: center;
+		    padding: 2rem;
+		    padding-bottom: 0rem;
+		    color: @grey3;
+	    }
+
+	    .slide {
+	    	padding-top: 1.6rem;
+	    }
+	}
+}
+
+.slider.focused {
+	input {
+		opacity: 1;
+	}
+	.dollar-value {
+		opacity: 0;
+	}
+}

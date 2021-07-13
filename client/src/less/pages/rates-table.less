@@ -1,0 +1,335 @@
+.rates-gray-background{
+    background-color: #E5E5E5;
+    padding: 8px;
+    // border-radius: 8px;
+}
+
+
+.rates-form-holder{
+    .loader{
+        margin-top: 0px !important;
+    }
+
+
+    #loader-inner{
+        stroke: #fff !important;
+    }
+
+
+    .rates-flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 24px 8px 24px 24px;
+
+
+
+        .rates-input-flex-item{
+            flex-basis: 1;
+            flex-grow: 1;
+            margin-right: 16px;
+        }
+    }
+
+    .flex-submit{
+        flex:1;
+    }
+
+
+
+
+    .rates-submit-holder{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+
+
+
+
+.rates-table{
+    background-color: #e8e8e8;
+
+
+    .rates-table-row{
+        background-color: #ffffff;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+        padding: 0px 8px;
+
+        .rates-row-item1{
+            min-width: 120px;
+
+
+        }
+
+        .rates-row-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+    }
+
+    .rates-color-0{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #0B76BD;
+    }
+    .rates-color-1{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #568CC7;
+    }
+    .rates-color-2{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #8FAED6;
+    }
+    .rates-color-3{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #F8AC17;
+    }
+    .rates-color-4{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #FDC32B;
+    }
+    .rates-color-5{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #FFCF54;
+    }
+    .rates-color-6{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #0B76BD;
+    }
+    .rates-color-7{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #568CC7;
+    }
+    .rates-color-8{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #8FAED6;
+    }
+    .rates-color-9{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #F8AC17;
+    }
+    .rates-color-10{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #FDC32B;
+    }
+    .rates-color-11{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #FFCF54;
+    }
+
+}
+
+
+@media  (max-width: 768px){
+
+    .rates-table{
+        background-color: #e8e8e8;
+
+        display: flex;
+        border-radius: 8px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+
+        .rates-table-row{
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 300px;
+            
+            padding: 24px;
+            margin: 8px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .rate-term{
+                
+                margin-left: 0px !important;
+            }
+
+            .rates-row-item1{
+                min-width: 120px;
+                padding-top: 0px !important;
+                padding-bottom: 24px !important;
+
+            }
+
+            .rates-row-item{
+                padding: 0 !important;
+                width: 100%;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+
+        }
+
+
+
+    }
+
+}
+
+
+
+.select-rate {padding: 0px 44px 0px 18px;}
+
+// .select-rate{
+//     background: url(/img/chevron-down.svg) 100% no-repeat #ffffff;
+//     border: 2px solid #c9c9c9;
+//     &:hover {
+//         background-color: #fff;
+//         border-color: @brandSecondary;
+//     }
+// }
+
+
+
+.rates-table-loader{
+    background-color: #e8e8e8;
+
+
+    .loading-animation {
+    width: 60px;
+    height: 24px;
+    animation-duration: 1.8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #f4f4f4 8%, #e8e8e8 38%, #f4f4f4 54%);
+    background-size: 1000px 640px;
+
+    position: relative;
+
+    }
+
+    @keyframes placeHolderShimmer{
+        0%{
+            background-position: -468px 0
+        }
+        100%{
+            background-position: 468px 0
+        }
+    }
+
+
+    .rates-table-row{
+        background-color: #ffffff;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+        padding: 0px 8px;
+
+        .rates-row-item1{
+
+        }
+
+        .rates-row-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+    }
+
+    .rates-color-0{
+        color: #fff;
+        padding:  5px;
+        border-radius: 5px;
+        background-color: #0B76BD;
+    }
+    .rates-color-1{
+        color: #fff;
+        padding:  5px;
+        border-radius: 5px;
+        background-color: #568CC7;
+    }
+    .rates-color-2{
+        color: #fff;
+        padding:  5px;
+        border-radius: 5px;
+        background-color: #8FAED6;
+    }
+    .rates-color-3{
+        color: #fff;
+        padding:  5px;
+        border-radius: 5px;
+        background-color: #F8AC17;
+    }
+    .rates-color-4{
+        color: #fff;
+        padding:  5px;
+        border-radius: 5px;
+        background-color: #FDC32B;
+    }
+    .rates-color-5{
+        color: #fff;
+        padding:  5px;
+        border-radius: 5px;
+        background-color: #FFCF54;
+    }
+    .rates-color-6{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #0B76BD;
+    }
+    .rates-color-7{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #568CC7;
+    }
+    .rates-color-8{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #8FAED6;
+    }
+    .rates-color-9{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #F8AC17;
+    }
+    .rates-color-10{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #FDC32B;
+    }
+    .rates-color-11{
+        color: #fff;
+        border-radius: 5px;
+        background-color: #FFCF54;
+    }
+
+}

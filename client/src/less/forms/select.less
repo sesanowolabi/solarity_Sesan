@@ -1,0 +1,99 @@
+.select {
+   .fontRegular;
+   background-color: @grey2;
+   background: url('/img/chevron-down.svg') no-repeat right center #e0e0e0;
+   background-position-x: 94%;
+   background-size: 18px 18px;
+   border: none;
+   border-radius: 4px;
+   border-collapse: separate;
+   display: inline-block;
+   .fontSizeSelect;
+   position: relative;
+   padding: 0 44px 0 18px;
+   margin: 0 0 20px 0;
+   text-align: left;
+   -webkit-appearance: none;
+   width: 100%;
+   min-width: 120px;
+   max-width: 635px;
+   color: @grey4;
+   outline: none;
+   min-height: 52px;
+   transition: background-color 0.2s;
+   line-height: 50px;
+
+
+   &:hover {
+       cursor: pointer;
+       color: #484848;
+       background-color: #d3d3d3;
+   }
+
+   &:focus {
+       outline: 2px dotted #aeb0b5;
+       outline-offset: 3px;
+   }
+}
+
+.custom-select {
+    .select{
+        padding-top: @u*2;
+        &:hover {
+            cursor: pointer;
+            color: #484848;
+            background-color: #d3d3d3;
+        }
+
+        &:focus {
+            outline: 2px dotted #aeb0b5;
+            outline-offset: 3px;
+        }
+    }
+
+
+
+    .select-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    ul.options {
+        position: absolute;
+        top: 56px;
+        left: 0;
+        background-color: #fff;
+        text-align: left;
+        transition: visibility 0.3s all;
+        z-index: -1;
+        border-radius: 4px;
+        overflow: hidden;
+        min-width: 236px;
+        box-shadow: 0 2px 20px 0 rgba(167, 167, 167, 0.2);
+
+            li {
+                background-color: #fbfbfb;
+                padding: 1.2rem 2.4rem 1.2rem 1.6rem;
+                transition: 0.2s;
+
+                &:hover {
+                    background-color: @brandSecondaryAlt;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+
+            li.is-hidden {
+                display: none;
+            }
+    }
+
+    ul.is-visible {
+        visibility: visible;
+        z-index: 1;
+    }
+
+    ul.is-hidden {
+        visibility: hidden;
+    }
+}

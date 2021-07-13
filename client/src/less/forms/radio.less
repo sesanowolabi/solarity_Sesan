@@ -1,0 +1,122 @@
+.radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &--icon {
+    width: 3*@u;
+    height: 3*@u;
+    border: 2px solid @grey3;
+    background-color: #fff;
+    position: relative;
+    margin-right: @u;
+    border-radius: 50%;
+    transition: border 0.2s;
+
+      &:hover{
+        border: 2px solid @brandSecondary;
+      }
+  }
+
+  &--input {
+    opacity: 0;
+    position: absolute;
+    
+    &:checked + .radio--icon {
+      background-color: #fff;
+      border: 2px solid @brandSecondary;
+          
+      &:after {
+        content: '';
+        width: 2*@u;
+        height: 2*@u;
+        position: absolute;
+        background-color: @brandSecondary;
+        border-radius: 50%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+    &:focus + .radio--icon {
+      box-shadow: 0 0 8px 0 @brandSecondary;
+    }
+    &:active + .radio--icon {
+      box-shadow: 0 0 8px 0 @brandSecondary;
+    }
+    &:hover + .radio--icon {
+        background-color: #fff;
+        border: 2px solid @brandSecondary;
+    }
+  }
+}
+
+
+.choicesradio {
+  &--label {
+    background-color: #fff;
+    border: 2px solid @grey3;
+    border-radius: 4px;
+    transition: all 0.2s;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba(0,0,0,.15);
+      }
+
+      &:focus {
+        outline: 2px dotted #aeb0b5;
+        outline-offset: 3px;
+      }
+  }
+
+  &--title{
+    .fontMedium;
+    color: @grey5;
+  }
+
+  &--description{
+    color: @grey4;
+  }
+
+  &--icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    margin-top: -2px;
+    margin-right: 0;
+    right: 4px;
+    top: 4px;
+    opacity: 0;
+    transition: all 0.2s;
+
+    &:after {
+      content: '';
+      width: 8px;
+      height: 14px;
+      box-shadow: 2px 2px @brandSecondary;
+      transform: rotate(45deg);
+      position: absolute;
+      left: 11px;
+      top: 4px;
+    }
+  }  
+
+  &--input {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+
+    &:checked + .choicesradio--label {
+      border: 2px solid @brandSecondary;  
+
+      .choicesradio--icon {
+        opacity: 1;
+      }
+    }
+  }
+}

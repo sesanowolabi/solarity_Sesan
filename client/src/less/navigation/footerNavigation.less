@@ -1,0 +1,217 @@
+footer{
+	background: #F2F2F2;
+	overflow: hidden;
+	.footer-top-bar{
+		background: @brandSecondary;
+		color: #ffffff;
+	}
+
+	#chat {
+		border: none;
+    background: none;
+    padding: 0;
+	}
+
+	.chat-loader {
+		width: 280px;
+		height: 400px;
+		position: fixed;
+		bottom: 0px;
+		right: 20px;
+		border-radius: 7px;
+		background: #fff;
+		z-index: 1000;
+		box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.2);
+
+		.chat-loader-gif {
+			width: 75px;
+			height: 75px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-position: 100%;
+			background-repeat: no-repeat;
+		}
+
+		span {
+			background-color: #F0F0F0;
+			color: #000;
+			width: 100%;
+			padding: 5px 10px;
+			display: block;
+			border-radius: 7px 7px 0 0;
+			border-bottom: 1px solid @grey3;
+		}
+	}
+
+	.footer-outer {
+		margin: 0;
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1248px;
+		border-top: 1px solid @grey2;
+	}
+	.footer-main-bar{
+		display: flex;
+		position: relative;
+		.footer-nav{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			height: 100%;
+			width: 70%;
+			padding: 48px;
+			.mq-screen-md-max({
+				width: 100%;
+				padding: 32px;
+				height: inherit;
+			});
+
+			a {
+				&:hover {
+					color: @brandSecondary;
+				}
+			}
+			.footer-link-list{
+				list-style: none;
+				.mq-screen-md-max({
+					width: 45%;
+					margin-right: 5%;
+				});
+				.mq-screen-md-min({
+					flex-grow: 1;
+					margin: 0px 25px 16px 0px;
+				});
+
+				padding-inline-start: 0px;
+
+				.link-list-item{;
+				}
+				.link-list-heading{
+					font-weight: bold;
+					margin-bottom: 25px;
+				}
+			}
+		}
+		.footer-right-box{
+			width: 30%;
+			height: 100%;
+			padding: 48px;
+			position: relative;
+
+			&--bg {
+				position: absolute;
+				top: 0;
+				left: 100%;
+				width: 200%;
+				height: 100%;
+			}
+
+			.mq-screen-md-max({
+				width: 100%;
+				height: inherit;
+				padding: 32px;
+			});
+			p {
+				max-width: 390px;
+			}
+
+			.right-box-icons{
+
+				.right-box-icon {
+					// text-align: center;
+					// padding: 12px 26px;
+
+					span.feather {
+						position: relative;
+						display: block;
+						font-size: 24px;
+						padding-bottom: 6px;
+						.colorGrey4;
+					}
+
+					label {
+					}
+
+					&:hover {
+						cursor: pointer;
+						label {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.footer-bottom-bar{
+		clear: both;
+		width: 100%;
+
+		.footer-bottom-item{
+			margin-right: 35px;
+			.colorGrey4;
+		}
+	}
+
+	.footer-site-bar{
+		line-height: 60px;
+		a {
+			color: #000 !important;
+			text-decoration: underline;
+
+			&:hover {
+				color: @grey5 !important;
+			}
+		}
+	}
+
+	.footer-site-bar {
+		.container {
+			justify-content: center;
+			align-items: center;
+
+			a {
+				width: 56px;
+				height: 57px;
+				color: @brandSecondary;
+
+
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+				&:focus {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		p {
+			margin: 0;
+		}
+
+		.ncua-logo {
+			width: 110px;
+	    text-align: center;
+	    padding-top: 12px;
+	    padding-right: 22px;
+	    line-height: 1.4;
+	    color: @grey5;
+
+	    &:hover {
+	    	text-decoration: underline;
+	    }
+		}
+
+		.eho-logo {
+			img {
+				width: 56px;
+				height: 57px;
+				opacity: 0.6;
+			}
+		}
+	}
+}

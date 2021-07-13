@@ -1,0 +1,37 @@
+.richText {
+  
+  
+  a {
+    color: @brandSecondary;
+    text-decoration: underline;
+    &:hover {
+      color: @brandPrimary;
+    }
+  }
+
+  ul {
+    padding-bottom: @unit * 4;
+    list-style: none;
+    position: relative;
+    display: block;
+    
+    li {
+      position: relative;
+      display: block;
+      padding-bottom: 6px;
+      width: 100%;
+        
+      &:before {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 6px;
+        border-radius: 50em;
+        left: -16px;
+        top: 12px;
+        background-color: @brandSecondary;
+
+      }
+    }
+  }
+}  

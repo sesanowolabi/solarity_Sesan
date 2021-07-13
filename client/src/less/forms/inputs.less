@@ -1,0 +1,121 @@
+label {
+	color: @grey4;
+    display: block;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    line-height: 22px;
+    .fontRegular;
+    transition: color 0.2s;   
+
+    &:hover {
+        color: @grey5;
+    }
+}
+
+input, textarea {
+    border-radius: 4px;
+    background-color: #fff;
+    border: 2px solid #c9c9c9;
+    box-shadow: none;
+    display: inline-block;
+    .fontRegular;
+    .fontSize1;
+    min-height: 52px;
+    outline: none;
+    padding: 0 @u*2;
+    width: 100%;
+    z-index: -1;
+    -ms-transition: border 0.2s ease-in-out 0s;
+    transition: border 0.2s ease-in-out 0s;
+
+        &:hover {
+            border: 2px solid #a6a6a6;
+            background-color: #fff;
+        }
+
+    	&:focus {
+    		border: 2px solid @brandSecondary;
+            background-color: #fff;
+    	}
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 10px 16px;
+}
+
+.input-group.invalid {
+    input {
+        border: 2px solid #de3919;
+    }
+
+    .error-message {
+        color: #de3919;
+    }
+}
+
+.input-group {
+    .mb-1;
+}
+
+
+form.autocomplete {
+    display: block;
+    position: relative;
+
+    input.autocomplete {
+        margin: 0;
+        transition: 0s all;
+    }
+    .autocomplete-result-container {
+        position: absolute;
+        top: 56px;
+        left: 0;
+        background-color: #fff;
+        text-align: left;
+        -webkit-transition: all 0s;
+        -o-transition: all 0s;
+        transition: all 0s;
+        border-radius: 4px;
+        overflow: hidden;
+        max-height: 190px;
+        min-width: 282px;
+        -webkit-box-shadow: 0 2px 20px 0 rgba(167, 167, 167, 0.2);
+        box-shadow: 0 2px 20px 0 rgba(167, 167, 167, 0.2);
+        z-index: -1;
+        visibility: hidden;
+
+        .autocomplete-result {
+            background-color: #fff;
+            padding: 1.2rem 2.4rem 1.2rem 1.6rem;
+            transition: all 0s;
+
+            &:hover {
+                background-color: @brandSecondaryAlt;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+    .autocomplete-result-container.focused {
+        z-index: 1;
+        visibility: visible;
+    }
+}
+
+input.autocomplete.active {
+    box-shadow: none;
+}
+
+      
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+

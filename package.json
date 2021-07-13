@@ -1,0 +1,68 @@
+{
+  "name": "example-create-react-app-express",
+  "version": "1.0.0",
+  "description": "Example on using create-react-app with a Node Express Backend",
+  "author": {
+    "name": "Esau Silva",
+    "email": "esausilva85@gmail.com",
+    "url": "https://esausilva.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "dev:server": "cd client && yarn build && cd .. && yarn start",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "dependencies": {
+    "apollo-boost": "^0.1.20",
+    "axios": "^0.18.0",
+    "connect-mongo": "^2.0.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "graphql": "^0.13.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-less": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "hashids": "^1.2.2",
+    "immutability-helper": "^2.7.1",
+    "mongodb": "^3.2.2",
+    "mongoose": "^5.4.21",
+    "node-cron": "^2.0.3",
+    "prerender-node": "^3.2.1",
+    "react": "^16.6.1",
+    "react-apollo": "^2.3.0",
+    "react-dom": "^16.6.1",
+    "react-google-maps": "^9.4.5",
+    "react-modal": "^3.6.1",
+    "react-redux": "^5.1.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^1.1.4",
+    "react-scroll-to-component": "^1.0.2",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "run-sequence": "^2.2.1",
+    "yarn.lock": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esausilva/example-create-react-app-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/esausilva/example-create-react-app-express/issues"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "create-react-app"
+  ]
+}

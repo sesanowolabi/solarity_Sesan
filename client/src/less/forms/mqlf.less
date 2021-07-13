@@ -1,0 +1,114 @@
+.mqlf {
+    .fontSize4;
+    li {
+        position: relative;
+        display: block;
+        margin-bottom: 24px;
+        letter-spacing: -0.5px;
+
+        .input-group {
+            display: inline-block;
+            border-bottom: 2px solid @brandPrimary;
+            position: relative;
+            color: transparent;
+            margin: 0 8px;
+        }
+
+        .input-group.dropdown {
+            border-radius: 0;
+            // width: calc(~"100% + 40px");
+
+            &:after {
+                content: "";
+                position: absolute;
+                -webkit-transform-origin: 50% 0%;
+                -ms-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+                -webkit-transform: translate(0,-60%) rotate(45deg);
+                -ms-transform: translate(0,-60%) rotate(45deg);
+                transform: translate(0,-60%) rotate(45deg);
+                top: 50%;
+                right: 0;
+                border: .05208vw solid red;
+                border-width: 0 .15625vw .15625vw 0;
+                height: .83333vw;
+                width: .83333vw;
+            }
+        }
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        .fontSize4;
+        .fontMedium;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        color: @brandSecondary;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        overflow: visible;
+        width: calc(100% + 50px);
+        max-width: none;
+        min-height: 0;
+        line-height: 1;
+
+        &:placeholder {
+            color: red;
+        }
+    }
+
+    span {
+        display: block;
+        position: relative;
+        .fontSize4;
+        .fontMedium;
+        opacity: 0;
+    }
+
+    span.dropdown {
+        width: calc(~"100% + 40px");
+        .fontSize4;
+        .fontMedium;
+        opacity: 1;
+        color: @brandSecondary;
+        padding-right: 24px;
+    }
+        
+
+    optgroup { font-size:16px; }
+
+    select {
+        border-radius: 0;
+        border: 0;
+        // border-bottom: 2px solid @brandPrimary;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        appearance: none;
+        background-color: transparent;
+        outline: 0;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        opacity: 0;
+        color: @brandSecondary;
+        
+        width: calc(~"100% + 40px");
+
+        option {
+            font-size: 14px;
+        }
+
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}

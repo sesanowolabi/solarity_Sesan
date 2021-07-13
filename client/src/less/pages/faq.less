@@ -1,0 +1,132 @@
+.faqs{
+	background: #ffffff;
+
+	.faq-upper-section{
+		text-align: center;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		input{
+			max-width: 626px;
+			border-radius:5px;
+		}
+		button{
+			display: none;
+		}
+
+		.ais-InstantSearch__root {
+			position: relative;
+			display: block;
+		}
+
+		.ais-InstantSearch__root{
+			max-width: 626px;
+			margin: 0 auto;
+
+			.ais-Hits{
+				margin-top: -2px;
+			    border: 2px solid @grey3;
+			    border-top: 1px solid @grey3;
+			    border-radius: 4px;
+			    background-color: #fff;
+			    max-height: 286px;
+			    overflow: scroll;
+			    position: absolute;
+			    background-color: #fff;
+			    display: block;
+			    width: 100%;
+			    z-index: 1;
+
+			}
+
+			.ais-Hits-list{
+				list-style: none;
+				text-align: left;
+				padding: 0;
+				margin: 0;
+
+				.ais-Hits-item {
+					padding: 8px 16px;
+					.fontSize1;
+
+					a {
+						color: @grey5;
+					}
+
+					&:hover {
+						background-color: @grey1;
+						color: @brandSecondary;
+
+						a {
+							color: @brandSecondary;
+						}
+					}
+
+				}
+
+				.ais-Hits-item:first-of-type{
+					padding-top: 16px;
+				}
+			}
+		}
+	}
+
+	.faq-categories-holder{
+		display: flex;
+		margin-bottom: 80px;
+		justify-content: center;
+		flex-wrap: wrap;
+
+
+		.faq-single-category{
+			margin-bottom: 80px;
+			width: 30%;
+			padding-left: 8%;
+
+			img {
+				width: 60px;
+				height: auto;
+			}
+
+			ul{
+				list-style: none;
+				padding-inline-start: 0px;
+				padding: 0px 0px 0px 0px;
+				margin: 0px 0px 0px 0px;
+				li{
+					margin-bottom:15px;
+
+						a {
+							line-height: 1.6;
+							&:hover {
+								text-decoration: underline;
+							}
+						}
+				}
+				li.hide{
+					display: none;
+				}
+			}
+
+		}
+	}
+
+	.faq-help-holder{
+		min-height: 378px;
+		background: url('/img/pattern_background.jpg');
+		color: #ffffff;
+		padding-top: 55px;
+		width: 100%;
+		.faq-help-inner{
+			width: 80%;
+			margin: 0 auto;
+			p{
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
+
+
+// .ais-InstantSearch__root {
+// 	height: 52px;
+// }
